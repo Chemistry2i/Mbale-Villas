@@ -1,0 +1,847 @@
+/* 
+    Name:Wambogo Hassan Sadat
+    Reg No:24/U/ISD/12450/PD/2025
+    Course: Bsc. Information Systems and Technology
+ */
+
+/* imported google fonts of Poppinss */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+  
+/* universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* Declaring our CSS variables */
+:root{
+    --primary-color:rgb(21 21 43);
+    --secondary-color:white;
+    --main-color:rgb(0, 191, 255);
+    --heading-size:3em;
+    --font-family: 'Poppins',sans-serif;
+}
+/* body selector */
+
+
+.section{
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 1s ease;
+}
+
+#section{
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 1s ease;
+}
+
+#section.show{
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.section.show{
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+
+
+/* Header starts here */
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    position: fixed;
+    z-index: 10;
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 10px grey;
+    background-blend-mode: darken;
+    width: 100%;
+    height: 60px;
+}
+
+.navBar nav a{
+    margin-left: 30px;
+    font-size: 0.9em;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.navBar nav a:nth-child(1){
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+
+/* navbar001 */
+.navbar001{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Header button */
+.NavBtn button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    font-size: .9em;
+}
+
+.btnss{
+    display: none;
+}
+
+
+.MainNavBar{
+    display: none;
+}
+
+.maninavbar{
+    display: none;
+}
+
+.logo img{
+    width: 50px;
+    height: 50px;
+}
+
+
+/* Home section starts here */
+#Home{
+    position: relative;
+    width: 100%;
+    min-height:90vh;
+    /* background-color: rgb(150, 146, 146); */
+    background-image: url(img/vecteezy_modern-home-poolside-at-sunset_48834766.jpeg);
+    background-color: rgb(0, 0, 0,0.2);
+    background-blend-mode: darken;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+
+}
+
+.home001 h1{
+    font-size: 2.5em;
+    color: white;
+}
+
+.home-details p{
+    width: 500px;
+    font-size: .8em;
+    color: var(--secondary-color);
+    /* font-weight: 500; */
+}
+
+.home-Btn button{
+    width: 180px;
+    height: 40px;
+    margin-top: 10px;
+    border: none;
+    font-size: .9em;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
+
+.home002{
+    width: 90%;
+    height: 100px;
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 10px grey;
+    /* background-image: url(img/medium-exterior-of-luxury-and-modern-beautiful-minimal-villa-with-swimming-pool-ai-generated.jpg); */
+    /* background-size: cover; */
+    /* background-position: bottom; */
+    /* background-blend-mode: darken; */
+    position: absolute;
+    bottom: -50px;
+    left: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home002 p{
+    font-size: .8em;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.homeInputs{
+    display: flex;
+    gap: 5px;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.input-group{
+    width: 230px;
+    height: 40px;
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3px;
+    margin-top: 5px;
+    /* background-color: red; */
+}
+
+.input-group input{
+    width: 90%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-size: .8em;
+    /* background-color: red; */
+    background: transparent;
+    color: var(--primary-color);
+}
+
+input::placeholder{
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: .9em;
+}
+
+.input-Btn{
+    display: flex;
+    align-items: center;
+}
+
+.input-Btn button{
+    width: 150px;
+    height: 40px;
+    margin-top: 5px;
+    border: none;
+    background-color: var(--main-color);
+    font-size: .9em;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+#About{
+    width: 100%;
+    min-height: 140vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+}
+
+.About-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-card{
+    margin: 20px 0px;
+    width: 300px;
+    height: 310px;
+    border-radius: 5px;
+    background-color: transparent;
+    padding-bottom: 10px;
+    box-shadow: 0 0 10px grey;
+}
+
+.about-card p{
+    font-size: .8em;
+    padding: 0px 10px;
+}
+
+.About-card h2{
+    font-size: 1em;
+}
+
+
+.About-card-image img{
+    width: 100%;
+    height: 150px;
+    /* border-radius: 4px; */
+}
+/* 
+.main-about{
+    width: 90%;
+    min-height: 100%;
+    /* background-color: green; 
+} */
+
+.main-about h3{
+    color: var(--primary-color);
+}
+
+.main-about h1{
+    color: var(--main-color);
+}
+
+.main-info{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+.main-info button{
+    width: 100px;
+    height: 35px;
+    background-color: var(--main-color);
+    border: none;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.small-details{
+    padding-left: 10px;
+}
+
+.small-details button{
+    width: 105px;
+    border-radius: 4px;
+    background: transparent;
+    text-align: center;
+    padding-left: 5px;
+    border: 2px solid var(--main-color);
+    height: 30px;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.svg-img{
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--main-color);
+    display: grid;
+    place-items: center;
+    margin-right: 10px;
+    border-radius: 4px;
+    background-color: var(--main-color);
+}
+
+.about001{
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    place-items: center;
+    grid-gap: 10px;
+}
+
+.companies{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--main-color);
+}
+
+.company-logo img{
+    display: none;
+    width: 100px;
+    height: 100px;
+}
+
+/* services section */
+#Services{
+    width: 100%;
+    height: 80vh;
+}
+
+.service001{
+    width: 600px;
+    height: 600px;
+}
+
+.service001 video{
+    width: 100%;
+    height: 100%;
+}
+
+.service002 p{
+    width: 400px;
+    font-size: .8em;
+}
+
+.service{
+    /* background-color: red; */
+    display: flex;
+    gap: 20px;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.sim00{
+    display: flex;
+    gap:5px;
+    align-items: center;
+}
+
+.listings{
+    display: flex;
+    justify-content: space-between;
+}
+
+.serviceBtn button{
+    margin-top: 10px;
+    width: 200px;
+    height: 40px;
+    background-color: var(--main-color);
+    border: none;
+    color: var(--secondary-color);
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.sim00 svg{
+    margin-top: 10px;
+}
+
+.service002 h2{
+    color: var(--main-color);
+}
+
+/* Booking service */
+
+.book-service {
+    margin-top: 30px;
+    width: 100%;
+    height: 85vh;
+    background-color: rgb(0,0,0,0.3);
+    background-image: url(img/large-exterior-of-luxury-and-modern-beautiful-minimal-villa-with-swimming-pool-ai-generated.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* gap: 30px; */
+    /* background-color: blue; */
+}
+
+.contact {
+    width: 500px;
+    color: var(--secondary-color);
+    text-align: left;
+
+}
+
+.contact p{
+    font-size: .8em;
+}
+
+.contact h1{
+    text-align: left;
+}
+
+.book-service form{
+    background-color: var(--main-color);
+    height: 100%;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputgroup{
+    margin-top: 10px;
+}
+
+.inputgroup input{
+    width: 380px;
+    height: 40px;
+    padding-left: 5px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.form h1{
+    text-align: left;
+    color: var(--secondary-color);
+}
+
+select{
+    width: 380px;
+    height: 40px;
+}
+
+.inputgroup input::placeholder{
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+textarea{
+    width: 380px;
+    margin-top: 10px;
+    height: 100px;
+    resize: none;
+    accent-color: blue;
+    padding: 5px;
+}
+
+textarea::placeholder{
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.formBtn button{
+    width: 380px;
+    height:50px;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 1em;
+}
+
+
+.btnn button{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    width: 150px;
+    height: 40px;
+    margin-top: 10px;
+    justify-content: center;
+    background-color: var(--main-color);
+    border: none;
+}
+
+.btnn button a{
+    color: var(--secondary-color);
+}
+
+
+/* Property Section */
+#Property{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+.property-card{
+    width: 300px;
+    height: 350px;
+    box-shadow: 0 0 10px grey;
+}
+
+.property-container{
+    margin-top: 10px;
+}
+
+.property-card h3{
+    padding: 0px 10px;
+    font-size: 1em;
+    text-transform: lowercase;
+    color: var(--main-color);
+}
+
+.property h1{
+    color: var(--main-color);
+}
+
+.property-card p{
+    padding: 0px 10px;
+    font-size: .8em;
+    /* padding: 0px 10px; */
+    width: 290px;
+}
+
+.property-image img{
+    width: 300px;
+    height: 160px;
+    /* border-radius: 4px; */
+}
+
+.upload{
+    padding: 0px 10px;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.upload button{
+    width: 150px;
+    height: 35px;
+    border: none;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: .9em;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.property-container{
+    display: flex;
+    gap: 20px;
+}
+
+#Testimonials{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: var(--main-color); */
+}
+
+.Testimonials h1{
+    color: var(--main-color);
+}
+
+.testimonials-container{
+    display: flex;
+    gap: 10px;
+}
+
+.testimonials-card{
+    width: 350px;
+    height: 230px;
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 10px grey;
+    padding: 15px;
+}
+
+.testimonials-card p{
+    font-size: .8em;
+
+}
+
+.testimonials-image img{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+footer{
+    width: 100%;
+    min-height: 50vh;
+    display: grid;
+    place-items: center;
+    background-color: rgb(0,0,0,0.6);
+    background-image: url(img/large-exterior-of-luxury-and-modern-beautiful-minimal-villa-with-swimming-pool-ai-generated.jpg);
+    background-position: center;
+    background-blend-mode: darken;
+    background-size: cover;
+    padding-top: 20px;
+}
+
+.footer h2{
+    text-align: center;
+    color: var(--secondary-color);
+
+}
+
+.socials span img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.footer{
+    width: 100%;
+    min-height: 40vh;
+    /* background-color: blue; */
+}
+
+.footer-details{
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail001{
+    width: 250px;
+    height: 180px;
+    /* background-color: var(--primary-color); */
+    /* box-shadow: 0 0 10px grey; */
+    padding-left: 10px;
+}
+
+.detail001:nth-child(4){
+    width: 300px;
+}
+
+.Conclude{
+    width: 100%;
+    color: var(--secondary-color);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    justify-content: space-between;
+    padding: 10px 110px;
+}
+
+.Conclude p{
+    font-size: 0.7em;
+}
+
+.Conclude p a{
+    color: var(--main-color);
+}
+.finish{
+    text-align: center;
+}
+
+.finish a{
+    color: var(--secondary-color);
+    font-size: 0.7em;
+}
+
+.serve p{
+    font-size: .8em;
+    color: var(--secondary-color);
+}
+
+.serve h3{
+    color: var(--secondary-color);
+}
+
+.serve ul li{
+    /* list-style: circle; */
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.serve ul li a{
+    color: var(--secondary-color);
+    font-size: 0.8em;
+}
+
+.remaining{
+    margin-top: 10px;
+}
+
+.remaining form{
+    width: 270px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    font-size: .8em;
+}
+
+.remaining form input{
+    width: 70%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.Message{
+    margin-top: 5px;
+    font-size: .9em;
+}
+
+
+.remaining form button{
+    width: 25%;
+    height: 30px;
+    background-color: var(--main-color);
+    border: none;
+    color: var(--secondary-color);
+}
+
+.ggoglemap{
+    width: 50%;
+    height: 400px;
+    /* background-color: red; */
+}
+
+.moreRegards{
+    width: 50%;
+    height: 400px;
+    /* background-color: blue; */
+}
+
+.Gallery{
+    display: grid;
+    grid-template-columns: repeat(2,120px);
+    grid-template-rows: repeat(2,65px);
+    grid-gap: 5px;
+}
+
+.Gallery img{
+    width: 100%;
+    height: 100%;
+    border: 3px ridge var(--main-color);
+}
+
+.logos{
+    display: flex;
+    color: var(--secondary-color);
+}
+
+.buton{
+    margin-top: 7px;
+    display: flex;
+    gap: 2px;
+    /* justify-content: ; */
+    align-items: center;
+    padding-right: 5px;
+    font-size: 0.8em;
+    color: var(--secondary-color);
+}
+
+.buton button{
+    width: 50%;
+    background-color: var(--main-color);
+    border: none;
+    height: 30px;
+    color: var(--secondary-color);
+}
+
+.clean{
+    display: flex;
+    align-items: center;
+    grid-area: 3px;
+
+}
+
+.clean a{
+    font-size: .8em;
+    color: var(--secondary-color);
+}
+
+.iconLocation{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
